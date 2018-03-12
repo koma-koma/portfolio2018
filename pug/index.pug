@@ -1,13 +1,9 @@
 doctype html
 html(lang='ja')
-	head
-		meta(charset="utf-8")
-		title KOMA / Miyashita Keita
-		link(href="/css/style.css", rel="stylesheet")
-		link(href="img/koma-logo.svg", rel="shortcut icon")
+	include head
 	body
-		header.header
-		navbar.nav
+		include script 
+		include header
 		section.contents
-			h1 hello
-		footer.footer
+			h2 koma-koma.com
+		include footer

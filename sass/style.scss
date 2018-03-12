@@ -1,1 +1,33 @@
 @import "_reset";
+@import "header";
+@import "footer";
+
+body {
+		background: #ffffff;
+		font-family: Lato, 'Helvetica Neue', 'Work Sans', "Noto Sans JP", "游ゴシック Medium", 游ゴシック体, "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-style: normal;
+		font-weight: 300;
+    overflow-x: hidden;
+}
+
+/*---------------------------------------
+    Typorgraphy
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+	color: #222;
+}
+
+/*---------------------------------------
+    Background Animation
+-----------------------------------------*/
+
+.background {
+	position: fixed;
+	top: 0;
+	z-index: -10;
+	filter: blur(2px);
+}
