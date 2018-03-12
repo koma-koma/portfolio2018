@@ -23,7 +23,9 @@ gulp.task("sass", () => {
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-reset-scss').includePath
+    }))
     .pipe(gulp.dest("./public/css"))
         //reloadせずにinjectする
         .pipe(browserSync.stream())
