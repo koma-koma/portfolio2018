@@ -1,22 +1,37 @@
-header {
-  margin-top: 20px;
-  position: fixed;
+.header {
+  margin-top: 50px;
 
   .title {
     padding-left: 10px;
     background: #DDD;
-
     .title_logo {
+      // display: none;
       float: left;
-      margin-top: 2.5px;
+      margin-top: 5px;
+      margin-right: 10px;
     }
 
-    h1 {
-        font-size: 52px;
-    		padding-top: 0px;
-        padding-bottom: 0px;
-        margin-left: 60px;
-        margin-bottom: 14px;
+    .title_typo {
+      display: inline;
+      font-size: 38pt;
+      margin: 0px;
+    }
+  }
+
+  .navbar {
+    padding-top: 20px;
+    li {
+      font-size: 16pt;
+      display: inline;
+      margin-right: 20px;
+      padding: 0 5px;
+      background: #DDD;
+    }
+    a {
+      color: #555;
+      &:hover {
+        color: #222;
+      }
     }
   }
 }
